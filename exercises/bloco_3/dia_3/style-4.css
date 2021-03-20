@@ -1,0 +1,60 @@
+ol li{
+  background-color: yellow;
+}
+
+li{
+  font-size: 20px;;
+}
+
+li em{
+  font-weight: 700;
+}
+
+.pair{
+  color: green;
+}
+.prime{
+  text-transform: uppercase;
+}
+
+.header{
+  color: red;
+}
+
+.header em{
+  font-size: 40px;
+  border: 1px solid black;
+}
+.blue{
+  color: blue;
+}
+
+.pink{
+  background-color: pink;
+}
+
+.allies a{
+  text-decoration: none;
+  color: black;
+}
+
+.allies li:hover{
+  font-weight: bold;
+}
+
+.stack:hover{
+  color: orange;
+}
+.w3c:hover{
+  color: green;
+}
+
+.mdn:hover{
+  color:black;
+}
+.dev:hover{
+  color: yellow;
+}
+.trybe:hover{
+  color: greenyellow;
+}
