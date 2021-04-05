@@ -59,6 +59,18 @@
        mainBox.style.backgroundColor = 'rgb(76,164,109)';
        // 3 
        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+       // 4
+       document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+       // 5
+       let tagPSize = document.getElementsByTagName('p').length;
+       let tagP = document.getElementsByTagName('p');
+       for (let index = 0; index < tagPSize; index += 1){
+           tagP[index].innerText = tagP[index].innerText.toUpperCase();
+       }
+       // 6 
+       for (let index = 0; index < tagPSize; index += 1){
+           console.log(tagP[index].innerHTML);
+       }
     </script>
   </body>
 </html>
