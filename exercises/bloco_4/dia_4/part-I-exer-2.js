@@ -7,3 +7,4 @@ let info = {
 info.recorrente = 'Sim';
 
 console.log(info);
+

@@ -1,16 +1,19 @@
-let numbers = [2, 3, 6, 7, 10, 1];
+let numbers = [2, 4, 6, 7, 10, 0, -3];
 
-function findBiggerNumber(array){
-  let biggerIndice;
+function findSmallestIndex(array){
+  let smallestIndex;
+  let smallestNumber;
 
-  for(let index = 0; index < array.length - 1; index += 1){
-    if (array[index] > array[index+1]){
-      biggerIndice = index;
-    }else{
-      biggerIndice = index + 1;
+  for(let index = 0; index < array.length; index += 1){
+    if(index === 0){
+      smallestNumber = array[index];
+      smallestIndex = index;
+    }else if (array[index] < smallestNumber){
+      smallestNumber = array[index];
+      smallestIndex = index;
     }
   }
-  return biggerIndice;
+  return smallestIndex;
 }
 
-console.log(findBiggerNumber(numbers));
+console.log(findSmallestIndex(numbers));
