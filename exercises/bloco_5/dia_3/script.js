@@ -35,4 +35,16 @@ for (let index = 0; index < dezDaysList.length; index += 1){
   mounth.appendChild(day);
 }
 
-console.log(mounth);
+
+// Exercicio 2 
+
+function buttonHoliday(ButtonName){
+  let button = document.createElement('button');
+  let btnHolidayContainer = document.querySelector('.buttons-container');
+  
+  button.innerText = ButtonName;
+  button.id = 'btn-holiday';
+  btnHolidayContainer.appendChild(button);
+}
+
+buttonHoliday('Feriados');
