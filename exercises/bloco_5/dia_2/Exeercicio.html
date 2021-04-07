@@ -97,7 +97,29 @@
     divLeftContent.appendChild(image);
 
     //8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
-    //Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+    let listValues = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
+    let list = document.createElement('ul');
+    
+    for (let index = 0; index < listValues.length; index += 1){
+      let item = document.createElement('li');
+      item.innerText = listValues[index];
+      list.appendChild(item);
+    }
+
+    divRightContent.appendChild(list);
+
+    //9 Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+    let text1 = document.createElement('h3');
+    let text2 = document.createElement('h3');
+    let text3 = document.createElement('h3');
+
+    text1.innerText = 'Texto 1...';
+    text2.innerText = 'Texto 2...';
+    text3.innerText = 'Texto 3...';
+
+    mainContent.appendChild(text1);
+    mainContent.appendChild(text2);
+    mainContent.appendChild(text3);
 
   </script>
 </body>
