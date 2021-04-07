@@ -141,7 +141,12 @@
     
     //5 Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
     mainContent.style.backgroundColor = 'green';
+
     //6 Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+    let item9 = document.querySelectorAll('li')[8];
+    let item10 = document.querySelectorAll('li')[9];
+    list.removeChild(item9);
+    list.removeChild(item10);
 
   </script>
 </body>
