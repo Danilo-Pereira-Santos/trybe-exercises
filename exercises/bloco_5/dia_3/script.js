@@ -80,3 +80,22 @@ function buttonFriday(ButtonName){
 }
 
 buttonFriday('Sexta-feira');
+
+// exercicio 5 
+let btnFriday = document.querySelector('#btn-friday');
+let fridayDays = document.querySelectorAll('.friday');
+let numberDays = [];
+
+btnFriday.addEventListener('click', function(){
+  for (let index = 0; index < fridayDays.length; index += 1){
+    if (fridayDays[index].innerText !== 'Sextou!!!'){
+      numberDays.push(fridayDays[index].innerText)
+      fridayDays[index].innerText = 'Sextou!!!';
+    }else{
+      fridayDays[index].innerText = numberDays[index];
+    }
+  }
+});
+
+
+
