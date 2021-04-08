@@ -66,5 +66,17 @@ btnHoliday.addEventListener('click', function (){
       holidayDays[index].style.backgroundColor = cinza;
     }
   }
-
 });
+
+// exercicio 4
+
+function buttonFriday(ButtonName){
+  let btnFriday = document.createElement('button');
+  let btnFridayContainer = document.querySelector('.buttons-container');
+  
+  btnFriday.id = 'btn-friday';
+  btnFriday.innerText = ButtonName;
+  btnFridayContainer.appendChild(btnFriday);
+}
+
+buttonFriday('Sexta-feira');
